@@ -6,49 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-  <include
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/design_default_color_primary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent" />
 
-      layout="@layout/toolbar" />
+
 
       <ImageView
         android:id="@+id/iv_logo"
         android:layout_width="0dp"
         android:layout_height="145dp"
-        android:layout_margin="16dp"
+        android:layout_marginTop="40dp"
         android:src="@drawable/logo"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="72dp"
-          tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar"/>
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/tv_odontoapp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="472dp"
+        android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
         android:text="OdontoApp"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
   <TextView
-
-      android:layout_width="match_parent"
+      android:id="@+id/tv_frase"
+      android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginBottom="436dp"
+      android:layout_marginTop="16dp"
       android:gravity="center_horizontal"
       android:text="Seu App Dentário"
       android:textColor="@android:color/black"
       android:textSize="12sp"
       android:textStyle="bold"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintTop_toBottomOf="@id/tv_odontoapp"
       app:layout_constraintLeft_toLeftOf="parent"
       app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintTop_toBottomOf="@id/tv_frase"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/bt_mostrar_dentistas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:text="Mostrar Dentistas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="#112214"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
