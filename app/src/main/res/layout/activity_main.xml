@@ -27,12 +27,12 @@
         app:layout_constraintTop_toBottomOf="@id/toolbar"/>
 
     <TextView
-        android:id="@+id/tv_odontoapp"
+        android:id="@+id/tv_megaApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
-        android:text="OdontoApp"
+        android:text="MegaApp"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -46,11 +46,11 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="16dp"
       android:gravity="center_horizontal"
-      android:text="Seu App Dentário"
+      android:text="Seu App da MegaSena"
       android:textColor="@android:color/black"
       android:textSize="12sp"
       android:textStyle="bold"
-      app:layout_constraintTop_toBottomOf="@id/tv_odontoapp"
+      app:layout_constraintTop_toBottomOf="@id/tv_megaApp"
       app:layout_constraintLeft_toLeftOf="parent"
       app:layout_constraintRight_toRightOf="parent" />
 
@@ -64,17 +64,17 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <Button
-        android:id="@+id/bt_mostrar_dentistas"
+        android:id="@+id/bt_mostrar_resultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
-        android:text="Mostrar Dentistas"
+        android:text="Mostrar Resultados"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/view"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:backgroundTint="#112214"/>
+        android:backgroundTint="#009688"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
