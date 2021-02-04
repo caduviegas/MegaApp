@@ -8,5 +8,5 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Jogo(
-    @SerializedName("listaDezenas") val listaDezenas: List<String>.toString
+    @SerializedName("listaDezenas") val listaDezenas: List<String>
 ):Parcelable

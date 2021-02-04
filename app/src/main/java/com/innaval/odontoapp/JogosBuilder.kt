@@ -16,7 +16,7 @@ class JogosBuilder {
 
         val retrofit = Retrofit.Builder()
             .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-            .baseUrl ( "https://lotericas.io/api/v1/jogos/megasena/lasted" )
+            .baseUrl ( "https://lotericas.io/api/v1/" )
             .addConverterFactory (GsonConverterFactory.create (gson))
             .build ()
 
