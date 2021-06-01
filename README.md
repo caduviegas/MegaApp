@@ -1,2 +1,7 @@
-# OdontoApp
-Aplicativo para consultar dados de dentistas cadastrados no conselho federal de odontologia. Linguagem utilizada kotlin
+# MegaApp
+Aplicativo para consultar os ultimos resultados da megaSena. 
+
+Linguagem utilizada kotlin
+Uso de Retrofit
+Api da MegaSena
+Uso de RxJava
